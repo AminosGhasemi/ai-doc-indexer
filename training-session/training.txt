@@ -1,0 +1,16 @@
+1. In your own words: what is a variable in Python?
+>> I think, variable is name of a space on storage that can hold data.
+
+2. Name at least three common built-in data types in Python.
+>> int, float, str
+
+3. What will this code print, and why?
+```
+a = 5
+b = a
+b = 10
+print(a)
+```
+>> 5
+>> because 5 still hold on the variable a.
+
