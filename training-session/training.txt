@@ -1,22 +1,33 @@
-1. What is the difference between int and float in Python? Give one example value for each.
->> The difference between int and float in Python is that int represents whole numbers without a decimal point, while float represents numbers with a decimal point.
+1. What is the main practical difference between a list and a tuple in Python?
+>> The main practical difference between a list and a tuple in Python is that lists are mutable,
+   meaning their elements can be changed after creation, while tuples are immutable, meaning their
+   elelments cannot be changed after creation. This makes tuples more suitable for fixed collections
+   of items, while lists are better for collections that may need to be modified.
 
-3. What does this code print, and why?
+2. What will this code print, and why?
 ```
-x = 10
-y = 3
-print(x / y)
+nums = [1, 2, 3]
+nums.append(4)
+print(nums)
 ```
->> 3.3333333333333335.
->> because the division operator (/) in Python returns a float value even if both operands are integers.
+>> [1, 2, 3, 4].
+>> because the append() method adds an element to the end of the list, modifying the original list in place.
 
-3. How would you format a float 3.14159 to show only 2 decimal places in an f-string?
->> You can format a float to show only 2 decimal places in an f-string by using the following syntax:
-```python
-value = 3.14159
-formatted_value = f"{value:.2f}"
-print(formatted_value)  # Output: 3.14"
+
+2. Given this data:
 ```
+students = [
+    {"name": "Amin", "grades": [80, 90, 70]},
+    {"name": "Sara", "grades": [60, 75, 85]},
+]
+```
+How would you access Sara’s second grade (75) using indexing?
+
+>> students[1]["grades"][1]
+>> call the second element of the students list (Sara's dictionary), then access the "grades"
+    list within that dictionary, and finally access the second element of that list (index 1)
+    to get Sara's second grade, which is 75.
+
 
 
 
